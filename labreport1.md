@@ -65,4 +65,8 @@ Now that you've remotely connected to the server, you can try running some comma
 * `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
 * `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
+The code and output should look something like this:
+
+<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/example_code.png?raw=true" width=50% height=50%>
+
 Once you are finished, you can log out of the remote server by using [Ctrl] + [D] or running the command `exit`.
