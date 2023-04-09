@@ -20,3 +20,32 @@ If you're using Windows, you'll first need to download Git at https://gitforwind
 
 Once you have a Git Bash terminal open, you can use ssh through this command:
 `$ ssh cs15lsp23zz@ieng6.ucsd.edu` where `zz` is replaced by the letters in your course-specific account username.
+Since this is your first time remotely connecting to this server, when you run the code you may get a message like this:
+```
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Type `yes` and press enter. The terminal should ask you to enter your password. When you type your password, the letters may not appear because the terminal wants to hide the password (similar to how passwords show up as dots on other websites). After you've entered your password, you should see a message like this:
+```
+# Now on remote server
+Last login: Sun Jan  2 14:03:05 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
+quota: No filesystem specified.
+Hello cs15lsp23zz, you are currently logged into ieng6-203.ucsd.edu
+
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:25:01   0  0.08,  0.17,  0.11
+ieng6-202   23:25:01   1  0.09,  0.15,  0.11
+ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+
+Sun Jan 02, 2022 11:28pm - Prepping cs15lsp23
+```
+
+This means that you have successfully remotely connected to the server!
+
+## Part 4: Running Some Commands
+
