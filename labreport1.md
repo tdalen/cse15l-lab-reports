@@ -3,7 +3,7 @@
 ## Part 1: Finding Your CSE15L Account
 
 Use this [link](https://sdacs.ucsd.edu/~icc/index.php) to lookup your course-specific account for CSE 15L. Type in your username and student ID. After entering those fields, you should see a section called "Additional Accounts" with an account "cs15lsp23zz" where "zz" is replaced by the specific letters for your username. 
-![Image](account_lookup.png)
+<img src="account_lookup.png" width=60% height=60%>
 
 Since this is your first time logging in, you'll need to set a new password for your CSE15L account. Follow [this tutorial](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view) to reset your password.
 
