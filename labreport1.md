@@ -13,7 +13,7 @@ Since this is your first time logging in, you'll need to set a new password for 
 To install Visual Studio Code, go to their website at https://code.visualstudio.com/. Follow the instructions to download Visual Studio Code for your operating system.
 Once successfully installed, you should be able to open Visual Studio Code and see a page that looks similar to this:
 
-<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/vscode_installed.png?raw=true" width=50% height=50%>
+<img src="vscode_installed.png" width=50% height=50%>
 
 
 ## Part 3: Remotely Connecting
@@ -23,10 +23,10 @@ If you're using Windows, you'll first need to download Git at https://gitforwind
 1. Open Visual Studio Code and press [Ctrl] + [ ` ] to open a terminal.
 
 2. Open the command palette with [Ctrl] + [Shift] + [P]. Type "Select Default Profile" into the search bar and select Git Bash from the options.
-<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/git_bash.png?raw=true" width=75% height=75%>
+<img src=git_bash.png" width=75% height=75%>
 
 3. Click on the + icon in the terminal window to open a new terminal that uses Git Bash.
-<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/bash_terminal.png?raw=true" width=75% height=75%>
+<img src=bash_terminal.png" width=75% height=75%>
 
 Once you have a Git Bash terminal open, you can use `ssh` through this command:
 `$ ssh cs15lsp23zz@ieng6.ucsd.edu` where `zz` is replaced by the letters in your course-specific account username.
