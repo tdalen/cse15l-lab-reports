@@ -3,7 +3,7 @@
 ## Part 1: Finding Your CSE15L Account
 
 Use this [link](https://sdacs.ucsd.edu/~icc/index.php) to lookup your course-specific account for CSE 15L. Type in your username and student ID. After entering those fields, you should see a section called "Additional Accounts" with an account "cs15lsp23zz" where "zz" is replaced by the specific letters for your username. 
-<img src="account_lookup.png" width=60% height=60%>
+![Image](account_lookup.png)
 
 Since this is your first time logging in, you'll need to set a new password for your CSE15L account. Follow [this tutorial](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view) to reset your password.
 
@@ -13,7 +13,7 @@ Since this is your first time logging in, you'll need to set a new password for 
 To install Visual Studio Code, go to their website at https://code.visualstudio.com/. Follow the instructions to download Visual Studio Code for your operating system.
 Once successfully installed, you should be able to open Visual Studio Code and see a page that looks similar to this:
 
-<img src="vscode_installed.png" width=50% height=50%>
+![Image](vscode_installed.png)
 
 
 ## Part 3: Remotely Connecting
@@ -23,10 +23,10 @@ If you're using Windows, you'll first need to download Git at https://gitforwind
 1. Open Visual Studio Code and press [Ctrl] + [ ` ] to open a terminal.
 
 2. Open the command palette with [Ctrl] + [Shift] + [P]. Type "Select Default Profile" into the search bar and select Git Bash from the options.
-<img src=git_bash.png" width=75% height=75%>
+![Image](git_bash.png)
 
 3. Click on the + icon in the terminal window to open a new terminal that uses Git Bash.
-<img src=bash_terminal.png" width=75% height=75%>
+![Image](bash_terminal.png)
 
 Once you have a Git Bash terminal open, you can use `ssh` through this command:
 `$ ssh cs15lsp23zz@ieng6.ucsd.edu` where `zz` is replaced by the letters in your course-specific account username.
@@ -67,6 +67,6 @@ Now that you've remotely connected to the server, you can try running some comma
 
 The code and output should look something like this:
 
-<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/example_code.png?raw=true" width=50% height=50%>
+![Image](example_code.png)
 
 Once you are finished, you can log out of the remote server by using [Ctrl] + [D] or running the command `exit`.
