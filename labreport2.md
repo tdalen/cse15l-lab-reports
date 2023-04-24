@@ -19,6 +19,69 @@ How are you
 ```
 
 ## Part 2
+**Original `reversed` method:**
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+If I test this method with an input of an `int[]` array with 4 numbers `{1, 2, 3, 4}`, this results in a failure.
+
+Test:
+```
+@Test
+  public void testReversedLonger() {
+    int[] input1 = {1, 2, 3, 4};
+    int[] output1 = {4, 3, 2, 1};
+    assertArrayEquals(output1, ArrayExamples.reversed(input1));
+  }
+  ```
+ Output:
+ 
+<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/Test1Output.png?raw=true" width="50%" height="50%">
+  
+Running a test with an input of an `int[]` array with all 0's, `{0, 0, 0}` for example, does not induce a failure.
+
+Test:
+```
+@Test
+  public void testReversedZero() {
+    int[] input1 = {0, 0, 0};
+    int[] output1 = {0, 0, 0};
+    assertArrayEquals(output1, ArrayExamples.reversed(input1));
+  }
+  ```
+Output:
+
+<img src="https://github.com/tdalen/cse15l-lab-reports/blob/main/Test2Output.png?raw=true" width="50%" height="50%">
+
+**Fixing the method:**
+
+Before:
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+After:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+ ```
+To fix the bug, I changed `arr[i] = newArray[arr.length - i - 1];` to `newArray[i] = arr[arr.length - i - 1];`, essentially switching `arr` and `newArray`. The original method reassigned values of `arr` with the corresponding values from `newArray`, but `newArray` is just an uninitialized array with values of 0. This is why the test with an input of an array with only 0's worked because the method would always fill the array with 0's. Instead, we want to reassign the values of `newArray` with the values from `arr`. This fix allows `newArray`to be reassigned with the values in `arr` in a reversed order.
 
 ## Part 3
 In Weeks 2 and 3, I learned a lot about URLs and the different parts of a URL that I didn't know before. I've always heard the term URL, but never learned what exactly it was or how to work with URLs in code until these two weeks. I now know about the different parts that make up a URL, like paths, queries, and fragments, and what purpose each of them serve. I also learned about the URI class in Java that allows us to work with creating and reading URLs.
