@@ -15,6 +15,7 @@ $ grep -c "weight" technical/biomed/1468-6708-3-1.txt
 ```
 In this example, `grep` searches each line in 1468-6708-3-1.txt and sees if the line contains "weight". The output means that there are 54 lines containing the word "weight" in the file.
 
+
 **2. `grep -n`**
 
 The `-n` modifier prints the line number and corresponding line that matches the specified pattern.
@@ -129,3 +130,23 @@ http://www-leland.stanford.edu/~wolak
 
 ```
 For this output, `grep -v` found all of the lines that did not include " " (space).
+
+**4. `grep -A`**
+The `-A` modifier is used to display a certain number of lines that follow a matched line.
+```
+$ grep -A 3 "Draft Recommendations" technical/government/Alcohol_Problems/DraftRecom-PDF.txt
+Draft Recommendations
+
+Daniel Hungerford opened the final session of the conference by
+outlining the group's ultimate task-to create research
+```
+In this example, `grep` prints the matched line containing "Draft Recommendations", and the next 3 lines in the file after that matched line.
+```
+$ grep -A 1 "DECLARATION OF WAR" technical/911report/chapter-2.txt
+            A DECLARATION OF WAR
+            In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian
+```
+For this output, `grep` found one line containing the specific pattern and printed the next line that follows in the file.
+
+## Sources
+All commands were found through this link: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
