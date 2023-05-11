@@ -149,4 +149,4 @@ $ grep -A 1 "DECLARATION OF WAR" technical/911report/chapter-2.txt
 For this output, `grep` found one line containing the specific pattern and printed the next line that follows in the file.
 
 ## Sources
-All commands were found through this link: www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+All commands were found through this link: [www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/](www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
