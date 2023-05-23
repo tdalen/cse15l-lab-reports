@@ -21,6 +21,7 @@ $ bash t <Tab> <Enter>
 I changed the directory to the cloned repository, typed `bash t`, and used `<Tab>` to autofill `test.sh` and ran the command. 
 
 4. Edit the code file to fix the failing test.
+![Image](vim.png)
 ```
 $ vim ListExamples.java
 /index1, <Enter>, n, n, n, n, n, n, n, n, n, <Right>, <Right>, <Right>, <Right>, x, i, 2
