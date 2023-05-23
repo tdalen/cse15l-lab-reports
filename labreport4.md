@@ -1,7 +1,7 @@
 # Lab Report 4
 1. Log into ieng6.
 ```
-<Ctrl><R>, "ssh", <Enter>
+<Ctrl><R>, "ss", <Enter>
 ```
 Since the ssh command with my account was in my history, I used `<Ctrl><R>` to open the history and searched `ssh` to get the right command.
 
@@ -9,7 +9,7 @@ Since the ssh command with my account was in my history, I used `<Ctrl><R>` to o
 ```
 $ git clone <Ctrl><V>
 ```
-I copied the URL to my fork of the repository from the web, and pasted this as the argument for the `git clone` command.
+I copied the SSH URL to my fork of the repository from the web, and pasted this as the argument for the `git clone` command.
 
 3. Run the tests, demonstrating that they fail.
 ```
@@ -35,7 +35,7 @@ I searched `"ba"` in my history for the command `bash test.sh`, and ran the test
 6. Commit and push the resulting change to your Github account.
 ```
 $ git add Li <Tab> .java <Enter>
-$ git co <Tab> -m "Fixed ListExamples"
+$ git com <Tab> -m "Fixed ListExamples"
 $ git push origin main
 ```
 I typed in most of these commands manually, but used <Tab> to autocomplete `ListExamples` and the `commit` command.
