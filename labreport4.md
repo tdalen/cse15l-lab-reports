@@ -1,5 +1,6 @@
 # Lab Report 4
 1. Log into ieng6.
+![Image](ssh.png)
 ```
 <Ctrl><R>, "ss", <Enter>
 ```
