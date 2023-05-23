@@ -7,6 +7,7 @@
 Since the ssh command with my account was in my history, I used `<Ctrl><R>` to open the history and searched `ssh` to get the right command.
 
 2. Clone your fork of the repository from your Github account.
+![Image](git_clone.png)
 ```
 $ git clone <Ctrl><V>
 ```
