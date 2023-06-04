@@ -69,6 +69,7 @@ class LongerThan3 implements StringChecker {
   }
 }
 ```
+
 * grade.sh
 ```
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
@@ -115,6 +116,7 @@ fi
 javac -cp $CPATH *.java 2>error-output.txt
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples
 ```
+
 * All other files were kept the same.
 
 **Commands:**
