@@ -25,6 +25,7 @@ After trying your suggestion, I found that my grade.sh compiled when running on 
 
 **Contents of Files Before Debugging:**
 * TestListExamples.java
+
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -71,6 +72,7 @@ class LongerThan3 implements StringChecker {
 ```
 
 * grade.sh
+
 ```
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
 
